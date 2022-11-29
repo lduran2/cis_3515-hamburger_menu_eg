@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Hamburger Menu example</string>
+    <string name="take_picture_title">Take Picture</string>
+    <string name="delete_picture_title">Delete Picture</string>
+    <string name="help_title">Help</string>
+    <string name="yes">Yes</string>
+    <string name="no">Never mind</string>
+</resources>
