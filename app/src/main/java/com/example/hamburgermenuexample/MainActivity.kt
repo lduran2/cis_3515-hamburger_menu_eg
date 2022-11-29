@@ -25,7 +25,6 @@ class MainActivity : AppCompatActivity() {
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when (item.itemId) {
-
             R.id.action_take_picture -> Toast.makeText(this, "You clicked the Take Picture option", Toast.LENGTH_SHORT).show()
             // goes to temple website
             R.id.action_help -> startActivity(Intent(Intent.ACTION_VIEW).setData(Uri.parse("https://www.temple.edu")))
@@ -45,6 +44,9 @@ class MainActivity : AppCompatActivity() {
                 Toast.makeText(this, "Cool! You deleted the picture.", Toast.LENGTH_SHORT).show()
             }
             .setNegativeButton(getString(R.string.no)) { dialog, _ -> dialog.cancel() }
+            // cannot click outside to cancel the menu
+            .setCancelable(false)
+            // need to create and show
             .create()
             .show()
     }
