@@ -5,15 +5,15 @@
     <item
         android:id="@+id/action_take_picture"
         android:icon="@android:drawable/ic_menu_camera"
-        android:title="Take Picture"
+        android:title="@string/take_picture_title"
         app:showAsAction="ifRoom" />
     <item
         android:id="@+id/action_delete_picture"
         android:icon="@android:drawable/ic_menu_delete"
-        android:title="Delete Picture"
+        android:title="@string/delete_picture_title"
         app:showAsAction="ifRoom" />
     <item
         android:id="@+id/action_help"
-        android:title="Help"
+        android:title="@string/help_title"
         app:showAsAction="never" />
 </menu>
